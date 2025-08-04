@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h2>My Habit Tracker</h2>
+        <nav>
+            <a href="#">Dashboard</a>
+            <a href="#">Profile</a>
+            <a href="#">Logout</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Track Your Habits</h1>
+
+        <div class="form">
+            <input type="text" id="habitName" placeholder="Habit Name">
+            <input type="text" id="habitCategory" placeholder="Category">
+            <input type="text" id="habitTags" placeholder="Tags (comma-separated)">
+            <button>Add Habit</button>
+        </div>
+
+        <div class="filters">
+            <select>
+                <option>Filter by Category</option>
+                <option>Health</option>
+                <option>Education</option>
+                <option>Fitness</option>
+            </select>
+            <select>
+                <option>Filter by Tags</option>
+                <option>Gym</option>
+                <option>Books</option>
+                <option>Running</option>
+            </select>
+        </div>
+
+        <div class="habit-list">
+            <div class="habit-card">
+                <div class="habit-details">
+                    <h3>Exercise</h3>
+                    <p>Category: Health</p>
+                    <p>Tags: Gym, Running</p>
+                </div>
+                <div class="habit-actions">
+                    <span>Edit</span>
+                    <span class="delete">Delete</span>
+                </div>
+            </div>
+
+            <div class="habit-card">
+                <div class="habit-details">
+                    <h3>Reading</h3>
+                    <p>Category: Education</p>
+                    <p>Tags: Books, Learning</p>
+                </div>
+                <div class="habit-actions">
+                    <span>Edit</span>
+                    <span class="delete">Delete</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
