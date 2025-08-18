@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title>Dashboard - Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>My Habit Tracker</h2>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="profile.html">Profile</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </header>
+  <main>
+    <h1 id="welcome"></h1> 
+    <section class="habit-form">
+      <h2>Add New Habit</h2>
+      <form id="habitForm">
+        <input type="text" id="habitName" placeholder="Habit Name">
+        <input type="text" id="habitCategory" placeholder="Category">
+        <input type="text" id="habitTags" placeholder="Tags">
+        <button type="submit">Add Habit</button>
+      </form>
+    </section>
+    <section id="habitList">
+      <h2>Your Habits</h2>
+    </section>
+  </main>
+  <script src="script.js"></script>
+  <script>
+    const user = localStorage.getItem("username");
+    document.getElementById("welcome").innerText = "Welcome, " + (user ? user : "Guest");
+  </script>
+</body>
+</html>

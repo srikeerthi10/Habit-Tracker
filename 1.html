@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <input type="text" id="username" placeholder="Enter Username">
+    <button onclick="login()">Login</button>
+  </div>
+  <script>
+    function login() {
+      const user = document.getElementById("username").value;
+      if(user.trim() === "") {
+        alert("Enter a username!");
+        return;
+      }
+      localStorage.setItem("username", user);
+      window.location.href = "dashboard.html";
+    }
+  </script>
+</body>
+</html>

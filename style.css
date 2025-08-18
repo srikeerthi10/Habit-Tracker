@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, purple, blue);
+    color: white;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+header nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.form input {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+}
+.form button {
+    padding: 12px;
+    background-color:blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+.form button:hover {
+    background-color: blue;
+}
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.filters select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: black;
+    width: 50%;
+}
+.habit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.habit-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.habit-card:hover {
+    transform: scale(1.02);
+}
+.habit-details h3 {
+    margin: 0;
+}
+.habit-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color:white;
+}
+.habit-actions span {
+    margin-left: 15px;
+    cursor: pointer;
+    color:white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.habit-actions span.delete {
+    color:white;
+}
+.habit-actions span:hover {
+    color:white;
+}
